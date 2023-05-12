@@ -38,8 +38,7 @@ onSignup()
   {
     this.auth.signUp(this.signUpForm.value)
     .subscribe({
-      next:(res)=>{
-        alert(res.message);
+      next:(res)=>{       
         this.signUpForm.reset();
         this.router.navigate(['login']);
       },
@@ -55,6 +54,6 @@ onSignup()
     alert("Your form is invalid")
   }
 }
-
-
 }
+
+
